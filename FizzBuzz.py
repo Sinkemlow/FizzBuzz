@@ -6,15 +6,21 @@ for test in test_cases:
     print testlist
 
     i = 1
-    x = testlist[0]
-    y = testlist[1]
-    n = testlist[2]
-    print "x is " + x
-    print "y is " + y
-    print "n is " + n
+    x = int(testlist[0])
+    y = int(testlist[1])
+    n = int(testlist[2])
+
+    print "x is ", x
+    print "y is ", y
+    print "n is ", n
 
     while i <= n:
-        if i % x 
-
+        if i % x == 0 and i % y == 0:
+            print i, "is divisible by ", x, "and", y, "FB"
+        elif i % x == 0:
+            print i, "is divisible by ", x, "F"
+        elif i % y == 0:
+            print i, "is divisible by ", y, "B"
+        i += 1
 
 test_cases.close()
